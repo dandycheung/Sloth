@@ -16,7 +16,7 @@
 * View sockets and pipes established between processes
 * Inspection window with detailed macOS and Unix file/socket/process info
 * Powerful contextual menu for file operations
-* In-app authentication to run with root privileges
+* In-app authentication to run with `lsof` root privileges
 * Very fast, responsive native app written in Objective-C/Cocoa
 
 Sloth is essentially a friendly, exploratory graphical user interface built on top of the  [`lsof`](https://en.wikipedia.org/wiki/Lsof) command line tool. The output of `lsof` is parsed and shown in a sortable, searchable outline view with all sorts of convenient additional functionality. Check out the screenshots below.
@@ -64,7 +64,7 @@ If you need to run it on 10.9-10.12, version 3.2 works just fine. Older versions
 Sloth can be built using a reasonably modern version of Xcode via the `xcodeproj` or by running the following command in the repository root (requires Xcode build tools):
 
 ```
-make
+make build_unsigned
 ```
 
 Built products are created in `products/`.
